@@ -1,0 +1,1 @@
+Aqui será requisições do tipo POST, sempre usando react Query.
