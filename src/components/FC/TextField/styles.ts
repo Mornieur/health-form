@@ -46,45 +46,73 @@ let bounce = keyframes`
 let fixed = keyframes``;
 
 export const Container = styled.div<IProps>`
+  height: 100%;
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   flex-direction: column;
+
+  padding: 0.8rem;
+
+  label {
+    margin-bottom: 0.4rem;
+  }
   input {
-    margin-top: 0.4rem;
     width: 100%;
-    font-size: 1rem;
-    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    font-size: 13px;
+
+    border-radius: 5px;
     border: 1px solid ${({ isError }) => (isError ? '#f13c3c' : '#cecece')};
     padding: 0.3rem;
     animation-delay: 0.25s;
     animation: ${({ isError }) => (isError ? bounce : fixed)} 0.5s linear;
+    opacity: 1;
+    font-weight: 500;
+    color: black;
+
+    ::placeholder {
+      color: black;
+      opacity: 1;
+    }
+  }
+
+  select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.4rem;
+    height: 35px;
+
+    border-radius: 5px;
+    border: #fafafa;
+
+    margin-bottom: 10px;
+
+    color: black;
+    background-color: #fafafa;
+    cursor: pointer;
+  }
+
+  label {
+    color: #487eff;
+    font-size: 17px;
+    font-weight: 500;
   }
 `;
 export const ErrorContainer = styled.div`
-  min-height: 20px;
   font-size: 0.8rem;
   width: 100%;
-  padding-top: 0.2rem;
   color: red;
+
+  display: flex;
 `;
 
 export const RadioContainer = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: auto;
   li {
-    margin-top: 0.8rem;
-    border: 1px solid red;
     list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: auto;
-    align-items: center;
-    padding: 0.5rem;
   }
 `;
 
@@ -95,17 +123,40 @@ export const RadioInput = styled.input<IPropsRadio>`
   accent-color: ${({ inputColor }) => (inputColor ? inputColor : '#228af1')};
 `;
 export const CheckboxContainer = styled(RadioContainer)`
-  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 160px);
+  grid-template-rows: auto;
+  gap: 0.625rem;
+  justify-content: space-evenly;
   li {
-    margin-left: 1rem;
-    width: 140px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+
+    input {
+      width: 20px;
+      height: 20px;
+
+      margin-right: 5px;
+    }
+
+    label {
+      width: 100%;
+      flex: 1;
+      margin-bottom: 0;
+    }
   }
-  input {
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    margin-right: 0.6rem;
+  .otherInput {
+    grid-column: span 2;
+    padding: 0.5rem;
+    input {
+      width: 100%;
+      height: 30px;
+    }
   }
 `;

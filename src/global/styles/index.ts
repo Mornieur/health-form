@@ -4,31 +4,33 @@ export const GlobalStyle = createGlobalStyle`
 * {
   padding:0;
   margin:0;
+  outline: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-
 }
 
-
-
 body {
-  background-color: var(--blue-background);
-
- 
   width:100%;
   height:100%;
 
   scrollbar-width: thin;
+  overflow: auto;
+}
 
+html {
+  background-color: #dddddd;
 }
 
 
   scroll-behavior: smooth;
   overflow-x: hidden;
+
   
 
 
 :root {
+
+  height: 100%;
 
   // White Colors
 
