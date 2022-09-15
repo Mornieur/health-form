@@ -12,7 +12,6 @@ export const Content = styled.div`
   background-color: #fff;
   width: 100%;
   max-width: 1300px;
-
   height: 100vh;
 
   display: flex;
@@ -34,11 +33,11 @@ export const ContOne = styled.div`
   justify-content: space-evenly;
   max-width: 700px;
   text-align: center;
+  padding: 1rem;
 
   img {
     object-fit: contain;
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
   }
 
   @media (max-width: 810px) {
@@ -50,11 +49,11 @@ export const ContOne = styled.div`
   h1 {
     color: var(--blue-dark);
     font-weight: 500;
-    padding-top: 15rem;
-    padding-bottom: 15rem;
 
     @media (max-width: 810px) {
       padding-top: 0;
+      font-size: 25px;
+      font-weight: 600;
     }
   }
 
@@ -72,12 +71,18 @@ export const ContOne = styled.div`
 `;
 
 export const ContTwo = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  img {
+    margin: auto;
+    height: 100%;
+    position: relative;
+    max-width: 80% !important;
+    object-fit: contain;
+  }
+
   @media (max-width: 810px) {
     padding: 1rem;
-
-    img {
-      width: 80% !important;
-      object-fit: contain;
-    }
   }
 `;
