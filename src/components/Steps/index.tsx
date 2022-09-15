@@ -39,16 +39,7 @@ export const Steps: React.FC<StepsProps> = ({ children }: StepsProps) => {
             <Step
               key={label}
               className={activeStep >= index ? 'step activeStep' : 'step'}
-            >
-              {/* <StepLabel StepIconComponent={StepIcon}>
-                <StepIcon 
-                label={label}
-                value={index as any}
-                status={completed} 
-                 // active={isActiveStep(activeStep, index)}
-                  />
-              </StepLabel> */}
-            </Step>
+            ></Step>
           );
         })}
       </Stepper>
