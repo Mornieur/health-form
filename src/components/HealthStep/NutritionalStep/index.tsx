@@ -12,6 +12,8 @@ import { formatPhone } from '../../../utils/formatPhone';
 import { useMedicalRecords } from '../../../global/services/POST/useHealthForm';
 import { toast } from 'react-toastify';
 import Link from 'next/link';
+import ShippingConfirmation from '../../../pages/ShippingConfirmation';
+import { useRouter } from 'next/router';
 
 export const NutritionalStep: React.FC = () => {
   const { addNewMedicalRecords } = useMedicalRecords();
@@ -24,9 +26,9 @@ export const NutritionalStep: React.FC = () => {
           await addNewMedicalRecords(formikNutri.values);
         },
         {
-          success: 'Dados do aluno buscados com sucesso',
+          success: 'Dados do paciente buscados com sucesso',
           pending: 'Carregando...',
-          error: 'Erro ao buscar os dados do aluno',
+          error: 'Erro ao buscar os dados do paciente',
         },
         {
           autoClose: 1000,
@@ -122,8 +124,15 @@ export const NutritionalStep: React.FC = () => {
     );
   }, [formikNutri.values.contactPhoneTwo]);
 
-  // console.log([formikNutri.values.lactoseIntolerance], 'Aqui');
+  const router = useRouter();
 
+  const submitForm = () => {
+    formikNutri.handleSubmit();
+
+    if (Object.values(formikNutri.errors).length === 0) {
+      router.push('/ShippingConfirmation');
+    }
+  };
   return (
     <S.Container>
       <form id="health-form" onSubmit={formikNutri.handleSubmit}>
@@ -195,11 +204,10 @@ export const NutritionalStep: React.FC = () => {
           </div>
         </section>
 
-          <button type="submit" form="health-form">
-            Próximo
-            <AiFillCaretRight />
-          </button>
-        
+        <button type="submit" form="health-form">
+          Enviar
+          <AiFillCaretRight />
+        </button>
       </form>
     </S.Container>
   );
