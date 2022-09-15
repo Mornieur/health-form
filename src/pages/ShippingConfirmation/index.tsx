@@ -16,29 +16,13 @@ const ShippingConfirmation: NextPage = () => {
       <S.Container>
         <S.Content>
           <S.ContOne>
-            <Image
-              className="imageLogo"
-              src={LogoVereda}
-              alt="logoVereda"
-              width={200}
-              height={60}
-            />
-
             <h1>
               Formulário preenchido
               <br />
               com sucesso!
             </h1>
           </S.ContOne>
-          <S.ContTwo>
-            <Image
-              className="imageGif"
-              src={formSuccess}
-              alt="medicalRecord"
-              width={700}
-              height={700}
-            />
-          </S.ContTwo>
+          <S.ContTwo>{/* imagem de medico */}</S.ContTwo>
         </S.Content>
       </S.Container>
     </>
