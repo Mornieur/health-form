@@ -1,9 +1,6 @@
 import * as S from '../../styles/ShippingConfirmationStyles/styles';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import LogoVereda from '../../assets/Icon-Vereda/logoVereda.png';
-import Image from 'next/image';
-import formSuccess from '../../assets/Gifss/formSuccess.gif';
 
 const ShippingConfirmation: NextPage = () => {
   return (
