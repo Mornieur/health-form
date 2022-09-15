@@ -60,7 +60,7 @@ export const contactsKinship = [
 export const InputsInitial = [
   {
     kind: 'select',
-    label: 'O(a) estudante tem uma dieta nutricional regular?',
+    label: 'O(a) paciente tem uma dieta nutricional regular?',
     id: 'diet',
     values: nutritionaldiet,
     className: 'select',
@@ -118,7 +118,7 @@ export const InputsInitial = [
   {
     kind: 'complexInput',
     label:
-      'Compartilhe o histórico de progresso do(a) estudante, caso ele tenha tido obesidade:',
+      'Compartilhe o histórico de progresso do(a) paciente, caso ele tenha tido obesidade:',
     id: 'obesityHistory',
     placeholder: 'Digite aqui',
     type: 'text',
@@ -126,7 +126,7 @@ export const InputsInitial = [
   {
     kind: 'complexInput',
     label:
-      'O(a) estudante já teve algum tipo de transtorno alimentar? Se sim, digite aqui:',
+      'O(a) paciente já teve algum tipo de transtorno alimentar? Se sim, digite aqui:',
     id: 'eatingDisorder',
     placeholder: 'Nenhuma.',
     type: 'text',
@@ -142,7 +142,7 @@ export const InputsInitial = [
   {
     kind: 'complexInput',
     label:
-      'O(a) estudante realiza algum tipo de atividade física? Se sim, digite aqui:',
+      'O(a) paciente realiza algum tipo de atividade física? Se sim, digite aqui:',
     id: 'physicalActivity',
     placeholder: 'Nenhuma.',
     type: 'text',
@@ -150,7 +150,7 @@ export const InputsInitial = [
   {
     kind: 'complexInput',
     label:
-      'Digite aqui caso tenha outras informações consideradas relevantes a respeito da dieta do(a) estudante:',
+      'Digite aqui caso tenha outras informações consideradas relevantes a respeito da dieta do(a) paciente:',
     id: 'observationsDiet',
     placeholder: 'Não há informações.',
     type: 'text',
@@ -220,7 +220,7 @@ const allInputs = [
   },
 
   {
-    label: 'Caso o estudante já tenha tido alguma doença, digite aqui:',
+    label: 'Caso o paciente já tenha tido alguma doença, digite aqui:',
     kind: 'checkbox',
     id: 'illness',
     className: '',
@@ -389,7 +389,7 @@ const allInputs = [
     keyId: 'checkDifficultiesId',
     kind: 'checkbox',
     label:
-      'Caso o(a) estudante tenha alguma dificuldade, selecione aqui qual(ais):',
+      'Caso o(a) paciente tenha alguma dificuldade, selecione aqui qual(ais):',
     id: 'difficulties',
     className: '',
     options: [
@@ -428,7 +428,7 @@ const allInputs = [
   {
     kind: 'complexInput',
     label:
-      'O(a) estudante precisa de tratamento Educacional especializado? Se sim, digite o motivo:',
+      'O(a) paciente precisa de tratamento Educacional especializado? Se sim, digite o motivo:',
     id: 'educationalTreatmentSpecial',
     placeholder: 'Não.',
     type: 'text',
@@ -443,7 +443,7 @@ const allInputs = [
   {
     kind: 'complexInput',
     label:
-      'Indicar abaixo informações e observações consideradas relevantes pelos pais ou responsáveis a respeito do(a) estudante:',
+      'Indicar abaixo informações e observações consideradas relevantes pelos pais ou responsáveis a respeito do(a) paciente:',
     id: 'otherInformations',
     placeholder: 'Digite aqui',
     type: 'text',
@@ -458,7 +458,7 @@ export const allInputsConv = [
     keyId: 'checkhospitalAuthorizationId',
     kind: 'select',
     label:
-      'Em caso de emergência, a escola está autorizada a encaminhá-lo a um hospital?',
+      'Em caso de emergência, o paciente está autorizado a encaminhá-lo a um hospital?',
     id: 'hospitalAuthorization',
     values: genericValues,
     className: 'select',
