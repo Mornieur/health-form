@@ -7,12 +7,22 @@ export const Container = styled.div`
   align-items: center;
 
   .disabled {
-    filter: brightness(1);
-    opacity: 0.5;
+    input,
+    label {
+      width: 0;
+      height: 0;
+      display: none;
+    }
   }
 
-  .selectLactoseAndGluten {
-    font-weight: 500;
+  .inputStyle {
+    input {
+      margin-bottom: 18rem;
+
+      @media (max-width: 1143px) {
+        margin: 0;
+      }
+    }
   }
 
   @media (max-width: 500px) {
@@ -89,5 +99,14 @@ export const Grid = styled.div`
     margin-top: 0.625rem !important;
     border-radius: 12px;
     background: #fff;
+  }
+`;
+
+export const WarningText = styled.div`
+  p {
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
 `;
