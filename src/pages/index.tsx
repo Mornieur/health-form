@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import medicalRecord from '../assets/Gifss/medicalRecord.gif';
+import initial from '../assets/initial.png';
 import formSuccess from '../assets/Gifss/formSuccess.gif';
 import errorForm from '../assets/Gifss/errorForm.gif';
 import { FeedbackPage } from '../components/FC';
@@ -10,15 +10,13 @@ const Home: NextPage = () => {
   return (
     <div>
       {currentPage === 'initial' && (
-        <FeedbackPage buttonEnabled={true} image={medicalRecord}>
+        <FeedbackPage buttonEnabled={true} image={initial }>
           <h1>
-            Olá, verediano, você está
+            Olá, paciente, você está
             <br />
             preste a preencher a ficha
             <br />
-            médica e nutricional para
-            <br />
-            seus filhos(@).
+            médica e nutricional.
           </h1>
         </FeedbackPage>
       )}
