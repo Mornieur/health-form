@@ -197,7 +197,7 @@ export const SchemaNutri = () => {
     validationSchema: healthYupShema,
 
     onSubmit: (values) => {
-      console.log(values, 'dfdffddf');
+      console.log(values, 'Dados Enviados!');
     },
   });
 
