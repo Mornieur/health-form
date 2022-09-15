@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import initial from '../assets/initial.png';
-import formSuccess from '../assets/Gifss/formSuccess.gif';
-import errorForm from '../assets/Gifss/errorForm.gif';
+import formSuccess from '../assets/Successfull.gif';
+import warning from '../assets/warning.png';
 import { FeedbackPage } from '../components/FC';
 
 const Home: NextPage = () => {
@@ -10,9 +10,9 @@ const Home: NextPage = () => {
   return (
     <div>
       {currentPage === 'initial' && (
-        <FeedbackPage buttonEnabled={true} image={initial }>
+        <FeedbackPage buttonEnabled={true} image={initial}>
           <h1>
-            Olá, paciente, você está
+            Olá, paciente! você está
             <br />
             preste a preencher a ficha
             <br />
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         </FeedbackPage>
       )}
       {currentPage === 'failed' && (
-        <FeedbackPage buttonEnabled={false} image={errorForm}>
+        <FeedbackPage buttonEnabled={false} image={warning}>
           <h1>
             Opps!
             <br />
