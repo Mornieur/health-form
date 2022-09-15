@@ -27,6 +27,7 @@ export const Container = styled.div`
 
     .image-header {
       object-fit: contain;
+      padding-left: 1rem;
     }
   }
   main {
