@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import initial from '../assets/initial.png';
-import formSuccess from '../assets/Successfull.gif';
+import formSuccess from '../assets/successfull.gif';
 import warning from '../assets/warning.png';
 import { FeedbackPage } from '../components/FC';
 
