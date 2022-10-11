@@ -1,6 +1,5 @@
 import { Step, StepLabel, Stepper } from '@mui/material';
 import React, { ReactNode, useCallback, useRef, useState } from 'react';
-// import StepIcon from '../StepIcon';
 import * as S from './styles';
 
 interface StepsProps {
@@ -34,7 +33,6 @@ export const Steps: React.FC<StepsProps> = ({ children }: StepsProps) => {
     <S.Container>
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
-          let completed = completedStep(activeStep, index);
           return (
             <Step
               key={label}

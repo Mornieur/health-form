@@ -1,9 +1,4 @@
-import React, {
-  ChangeEvent,
-  HTMLInputTypeAttribute,
-  useEffect,
-  useState,
-} from 'react';
+import React, { ChangeEvent, HTMLInputTypeAttribute, useState } from 'react';
 import * as S from './styles';
 
 interface TextFieldProps {
@@ -191,7 +186,6 @@ export const TextFieldC: React.FC<TextFieldProps> = (props: TextFieldProps) => {
                   <input
                     type="text"
                     onChange={(e: ChangeEvent<HTMLInputElement>) => {
-                      //return props.formik;
                       changeOtherValue(e.target.value);
                     }}
                   />

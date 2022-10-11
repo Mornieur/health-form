@@ -11,8 +11,6 @@ import { AiFillCaretRight } from 'react-icons/ai';
 import { formatPhone } from '../../../utils/formatPhone';
 import { useMedicalRecords } from '../../../global/services/POST/useHealthForm';
 import { toast } from 'react-toastify';
-import Link from 'next/link';
-import ShippingConfirmation from '../../../pages/ShippingConfirmation';
 import { useRouter } from 'next/router';
 
 export const NutritionalStep: React.FC = () => {
@@ -73,8 +71,6 @@ export const NutritionalStep: React.FC = () => {
       setTimeout(() => setShowErrors(false), 1000);
     }
   }, [showErrors]);
-
-  // USEFORMVALIDATION ->
 
   useEffect(() => {
     let inputDisableTwo = document.getElementById(

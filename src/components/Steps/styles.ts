@@ -1,8 +1,3 @@
-import {
-  StepConnector,
-  stepConnectorClasses,
-  styled as muiStyle,
-} from '@mui/material';
 import styled from 'styled-components';
 
 interface BtnProps {
