@@ -166,9 +166,6 @@ export const SchemaNutri = () => {
       physicalActivity: null,
       glutenIntolerance: Options.genericValues[0],
       lactoseIntolerance: Options.genericValues[0],
-
-      //
-
       bloodType: Options.bloodTypes[0],
       hospitalAuthorization: Options.genericValues[0],
       hospital: null,
