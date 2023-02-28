@@ -34,8 +34,10 @@ const formValidation = () => {
 };
 
 Credits
-
+</br >
 This repository was created by Mornieur with the help of Bootstrap for the responsive design.
-License
 
+
+License
+</br >
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as you see fit.
