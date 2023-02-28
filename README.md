@@ -1,35 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1> Health Form <h1 />
 
-## Getting Started
+This is a repository containing a health form made with HTML, CSS, and JavaScript. The form allows users to input their health information, including their height, weight, blood pressure, and other relevant data.
+Preview
 
-First, run the development server:
+Health Form Preview
+Features
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-<br />
+    Responsive design that adapts to different screen sizes.
+    Custom form validation that checks for errors in real-time.
+    A reset button that clears all form fields.
+    Automatic calculation of body mass index (BMI) based on the user's height and weight.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Installation
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To use the health form in your project, follow the steps below:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+    Download the files from the repository or clone it using the following command:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+bash
 
-## Learn More
+git clone https://github.com/Mornieur/health-form.git
 
-To learn more about Next.js, take a look at the following resources:
+    Copy the files index.html, styles.css, and script.js to your project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Customize the form fields and styles in the HTML and CSS files according to your needs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    Update the form validation rules in the JavaScript file as necessary.
 
-## Deploy on Vercel
+javascript
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+const formValidation = () => {
+  // Define your validation rules here
+};
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Credits
+
+This repository was created by Mornieur with the help of Bootstrap for the responsive design.
+License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as you see fit.
