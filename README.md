@@ -1,4 +1,4 @@
-<h1> Health Form <h1 />
+ Health Form
 
 This is a repository containing a health form made with HTML, CSS, and JavaScript. The form allows users to input their health information, including their height, weight, blood pressure, and other relevant data.
 Preview
