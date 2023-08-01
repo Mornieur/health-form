@@ -1,43 +1,99 @@
- Health Form
+# Health Form - Simplified Health Declaration Form
 
-This is a repository containing a health form made with HTML, CSS, and JavaScript. The form allows users to input their health information, including their height, weight, blood pressure, and other relevant data.
-Preview
+## Overview
 
-Health Form Preview
-Features
+Health Form is a web application built with Next.js, TypeScript, Styled Components, React Icons, and Yup Schema. It allows users to fill out a health declaration form that collects patient and contact information. The form includes various components such as checkboxes, selects, and inputs, with some fields being mandatory. The form validates user input and displays relevant error messages for any missing or incorrect data.
 
-    Responsive design that adapts to different screen sizes.
-    Custom form validation that checks for errors in real-time.
-    A reset button that clears all form fields.
-    Automatic calculation of body mass index (BMI) based on the user's height and weight.
+## Live Demo
 
-Installation
+Check out the live demo of the project [here](https://your-live-demo-url.com).
 
-To use the health form in your project, follow the steps below:
+## Key Features
 
-    Download the files from the repository or clone it using the following command:
+- User-friendly interface for filling out the health declaration form.
+- Components for checkboxes, selects, and inputs with validation.
+- Real-time validation and error display for mandatory fields.
+- Secure handling of user data and privacy protection.
 
-bash
+## Technologies Used
 
-git clone https://github.com/Mornieur/health-form.git
+- Next.js: A React framework for server-side rendering and optimized performance.
+- TypeScript: A typed superset of JavaScript for enhanced code reliability.
+- Styled Components: A CSS-in-JS library for styling React components.
+- React Icons: Icon library for easy integration of SVG icons.
+- Yup Schema: A schema-based validation library for form validation.
 
-    Copy the files index.html, styles.css, and script.js to your project.
+## Installation and Setup
 
-    Customize the form fields and styles in the HTML and CSS files according to your needs.
+To run the project locally, follow these steps:
 
-    Update the form validation rules in the JavaScript file as necessary.
+1. Ensure you have Node.js and npm (Node Package Manager) installed on your system.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory in the terminal.
+4. Install the required dependencies using the following command:
 
-javascript
+```
+npm install
 
-const formValidation = () => {
-  // Define your validation rules here
-};
+```
+5. Start the development server with:
+```
+npm run dev
 
-Credits
-</br >
-This repository was created by Mornieur with the help of Bootstrap for the responsive design.
+```
 
+Aqui está o conteúdo para o arquivo readme.md:
 
-License
-</br >
-This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as you see fit.
+markdown
+
+# Health Form - Simplified Health Declaration Form
+
+![Health Form Demo](https://user-images.githubusercontent.com/12345678/your-demo-image.png) (substitua com o link para uma imagem demonstrando o projeto)
+
+## Overview
+
+Health Form is a web application built with Next.js, TypeScript, Styled Components, React Icons, and Yup Schema. It allows users to fill out a health declaration form that collects patient and contact information. The form includes various components such as checkboxes, selects, and inputs, with some fields being mandatory. The form validates user input and displays relevant error messages for any missing or incorrect data.
+
+## Live Demo
+
+Check out the live demo of the project [here](https://your-live-demo-url.com).
+
+## Key Features
+
+- User-friendly interface for filling out the health declaration form.
+- Components for checkboxes, selects, and inputs with validation.
+- Real-time validation and error display for mandatory fields.
+- Secure handling of user data and privacy protection.
+
+## Technologies Used
+
+- Next.js: A React framework for server-side rendering and optimized performance.
+- TypeScript: A typed superset of JavaScript for enhanced code reliability.
+- Styled Components: A CSS-in-JS library for styling React components.
+- React Icons: Icon library for easy integration of SVG icons.
+- Yup Schema: A schema-based validation library for form validation.
+
+## Installation and Setup
+
+To run the project locally, follow these steps:
+
+1. Ensure you have Node.js and npm (Node Package Manager) installed on your system.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory in the terminal.
+4. Install the required dependencies using the following command:
+
+```
+npm install
+```
+6. Start the development server with:
+```
+npm run dev
+```
+7. Access the application in your web browser through http://localhost:3000.
+
+## Usage
+
+    Access the Health Form application using the provided link.
+    Fill out the health declaration form, providing patient and contact information.
+    Ensure to complete all mandatory fields to avoid validation errors.
+    Submit the form once all information is provided.
